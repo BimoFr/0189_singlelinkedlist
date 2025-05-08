@@ -10,17 +10,17 @@ public:
     Node *next;
 };
 
-class List
+class SingleLinkedList
 {
     Node *START;
 
 public:
-    List()
+    SingleLinkedList()
     {
         START = NULL;
     }
 
-    void addnote()
+    void addnode()
     {
         int nim;
         cout << "\nMasukkan Nomor Mahasiswa: ";
@@ -49,9 +49,7 @@ public:
             }
             previous = current;
             current = current->next;
-
-            nodeBaru-> next = current;
-            previous ->next = nodeBaru;
+            
         }
     }
 };
